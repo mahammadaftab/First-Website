@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Simple web Development Template</title>
+	<style>
+				* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+			padding-right: 360px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 24px 28px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+			text-align: right;
+
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 20px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: lightsalmon;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: gold;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		button{
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		button{
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+		button:hover{
+			color: white;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.icons .socialmedia{
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+			margin-left: 580px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			
+
+		}
+		.icons a{
+			display: inline-flex;
+            text-decoration: none;
+            color: #fff;
+     	}
+
+		.icons ion-icon{
+			color: #fff;
+			font-size: 25px;
+			padding-left: 14px;
+			
+		}
+		
+		.icons ion-icon.facebook:hover{
+			color: blue;
+		}
+		.icons ion-icon.insta:hover{
+			color: lightpink;
+		}
+		.icons ion-icon.twit:hover{
+			color: lightblue;
+		}
+		.icons ion-icon.google:hover{
+			color: lightcoral;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding-top: 30px;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+
+	
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list"> 
+			<div class="logo">
+				<img src= "logo.jpg">
+			</div>
+			<li><a href="#web">Web Technology</a></li>
+			<li><a href="#program">C.S.S</a></li>
+			<li><a href="#course">Courses</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button>Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web">Web Technology</h1>
+				<p class="text-small">
+					HTML stands for HyperText Markup Language.
+					It is used to design web pages using a markup
+					language. HTML is the combination of Hypertext
+					and Markup language. Hypertext defines the
+					link between the web pages. A markup language
+					is used to define the text document within tag
+					which defines the structure of web pages.
+					HTML is a markup language that is used by the
+					browser to manipulate text, images, and other
+					content to display it in the required format.<br>
+					It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+					Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">
+					CSS (Cascading Style Sheets)
+				</h1>
+				<p class="text-small">
+					Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]<br>
+
+                    CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">JavaScript</h1>
+
+			<p class="sectionSubTag text-small">
+				JavaScript (JS) is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. It is one of the three core technologies of the World Wide Web, along with HTML and CSS.
+				JavaScript is a high-level, interpreted programming language. This means that it is easy to read and write, and it does not need to be compiled before it can be run. JavaScript is also a very versatile language. It can be used to create a wide variety of web applications, from simple animations to complex games.
+			</p>
+
+
+		</div>
+
+		<div class="thumbnail">
+			<img src= "laptop.jpg" alt="laptop image">
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+		<div class="icons">
+			<p class="text-footer">Follow Us </p>
+
+			<ul class="socialmedia">
+            <a href="https://www.facebook.com/profile.php?id=100047672171504&mibextid=ZbWKwL" class="xyz"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a>
+            <a href="https://instagram.com/md_aftab_360" class="xyz"><ion-icon class="insta" name="logo-instagram"></ion-icon></a>
+            <a href="https://x.com/360_aftab?t=ii5_uNzdugdpmoJvLwHHpg&s=08" class="xyz"><ion-icon class="twit" name="logo-twitter"></ion-icon></a>
+            <a href="#" class="xyz"><ion-icon class="google" name="logo-google"></ion-icon></a>
+        	</ul>
+            
+          </div>
+	</footer>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

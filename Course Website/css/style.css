@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../hero-img.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-right: 10px;
+	
+}
+ul li{
+	display: inline-block;
+	margin-top: 15px;
+	float: left;
+
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+	margin: 10px;
+	
+
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+	border-radius: 10px;
+}
+
+ul li.active a{
+background-color:#fff;
+	color: #000;
+
+}
+.join-btn a {
+  border: 1px solid #fff;
+  border-radius: 4px;
+
+}
+
+.join-btn a:hover {
+  color: #fff;
+  border-color: transparent;
+  background: #1dbf73;
+}
+
+.logo img{
+	float: left;
+	width: 150px;
+	margin-top: 1%;
+
+	height: auto;
+	
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 54%;
+	left: 375px;
+	transform: translate(-50%,-50%);
+
+
+}
+
+.title form{
+	display: flex;
+	
+	background: #fff;
+	border-radius: 5px;
+	padding: 8px;
+	padding-right: 10px;
+	margin-top: 30px;
+
+}
+
+.title form input{
+	border: 0;
+	outline: 0;
+	width: 550px;
+	font-size: 16px;
+	padding-left: 10px;
+
+
+}
+ h1 {
+ 	position: absolute;
+ 	top: 30%;
+    color: #fff;
+  	font-size: 3rem;
+  	max-width: 660px;
+  	line-height: 65px;
+  	margin-left: 42px;
+}
+
+.search{
+	display: flex;
+	padding: 10px 20px;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	background: #1dbf73;
+	color: #fff;
+	font-weight: 500;
+	cursor: pointer;
+
+}
+
+.button{
+	position: absolute;
+	top: 66%;
+	left: 370px;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+
+.btn {
+	border: 1px solid #fff;
+	border-radius: 20px;
+	padding: 5px 15px;
+	color: #fff;
+	transition: 0.6s ease;
+	font-size: 15px;
+	font-style: bold;
+	text-decoration: none;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+	
+}
+
+
+.dropdown{
+	display: none;
+    top:4%;
+    position: relative;
+    width: 150px;
+    
+
+    
+}
+.main:hover{
+	border-radius: 10px;
+
+}
+
+
+
+.main ul li:hover .dropdown
+{
+	display: block;
+	position: absolute;
+	margin-top: 15px;	
+}
+
+.main ul li:hover .dropdown ul 
+{
+	display: block;
+	margin:6px;
+}
+.main ul li:hover .dropdown ul li
+{
+	width: 180px;
+	padding: 5px;
+	border-radius: 5px;
+	border-bottom: 1px#fff;
+	background: transparent;
+	transition: 0.4s ease;
+}
+
+.main ul li:hover .sub-menu ul li:last-child 
+{
+	border-bottom: none;
+}
